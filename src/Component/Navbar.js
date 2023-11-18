@@ -8,7 +8,6 @@ const Navbar = () => {
         try {
             const result = await Logout()
             console.log('result', result)
-            // context.setUser(undefined)
             router.push("/login")
 
         } catch (err) {
