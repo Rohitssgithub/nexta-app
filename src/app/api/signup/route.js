@@ -3,7 +3,7 @@ import { connectDb } from "@/helper/db";
 import { User } from "@/models/user";
 import bycrypt from "bcryptjs";
 
-connectDb()
+connectDb();
 export async function GET() {
     try {
         const data = await User.find();
